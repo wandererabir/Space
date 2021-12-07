@@ -11,4 +11,11 @@
 @use 'sections/product';
 @use 'sections/pricing';
 @use 'sections/whatisit';
+@use 'sections/trial';
 @use 'sections/footer';
+
+@import url(http://fonts.googleapis.com/css?family=Inter);
+$font-face: 'Inter', sans-serif;
+body{
+    font-family: $font-face;
+}
