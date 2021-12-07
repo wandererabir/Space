@@ -1,0 +1,33 @@
+@use '../custom' as *;
+.main{
+    background: $primary;
+
+    li{
+        padding: 0 0 1rem;
+        margin-right: 20px;
+        color: $dark-theme;
+    }
+    a{
+        position: relative;
+        margin:0 11px 0 0;
+
+    }
+    a span:after {    
+        background: none repeat scroll 0 0 ;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: rgb(0, 0, 0);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+    a span:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+
+
+}
