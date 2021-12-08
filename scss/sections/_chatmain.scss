@@ -1,0 +1,36 @@
+.main{
+    background: rgb(0, 0, 0);
+    padding: 0;
+    width: 100%;
+
+
+    .chat-content{
+        width: 25%;
+        height:100vh;
+        background: rgb(0, 0, 0);
+    }
+    .chat-box{
+        width: 75%;
+        background: rgb(44, 43, 43);
+    }
+
+    form{
+        display: block;
+      }
+      
+      .form-group{
+        justify-self: center;
+        align-self: center;
+        border: 1px solid rgb(255, 255, 255);
+        width: 20%;
+        padding: 0px 0px;
+      }
+      
+      .form-control{
+        background-color: rgb(70, 67, 67);
+        width: 318px;
+        height: 40px;
+        border : none;
+      }
+      
+}

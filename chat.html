@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="assets\css\chat.css">
+  <link rel="stylesheet" href="assets\css\fontawesome.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <div class="container-fluid main">
+          <div class="row no-gutters">
+            <div class="chat-content col-md-4 border-right">
+                <div class="content-main">
+                    <div class="d-flex flex-row pt-2 justify-content-between">
+                        <div>
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle main-btn btn-sm" data-bs-toggle="dropdown">
+                                  Walkover Inc.
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn main-second-btn  btn-sm">Windows+Esc</button>
+                        </div>
+                    </div>
+                </div>
+                <hr style="color: rgb(255, 255, 255);">
+                <div>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search...">
+                          <button class="srch">
+                            <svg class="bi bi-search" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div class="chat-box col-md-8" style=" background: rgb(44, 43, 43);"></div>
+          </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
