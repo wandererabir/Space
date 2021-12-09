@@ -11123,32 +11123,47 @@ textarea.form-control-lg {
   color: #e3f735;
 }
 
-.main .main-btn {
+.main .main-btn, .chat-content .main-btn {
   float: left;
   font-size: 12px;
   border: none;
-  background-color: #0000;
+  background-color: transparent;
   color: #ffffff;
   margin-right: 7px;
 }
-.main .main-second-btn {
-  float: right;
+.main .main-second-btn, .chat-content .main-second-btn {
   font-size: 10px;
   border: 1px solid #ffffff;
-  background-color: #0000;
+  background-color: transparent;
   color: #ffffff;
 }
-.main .srch {
+.main .srch, .chat-content .srch {
   float: right;
-  width: 25px;
-  height: 34px;
-  margin-top: -38px;
-  margin-right: 2px;
+  width: 22px;
+  height: 30px;
+  margin-top: -32px;
+  margin-right: 5px;
   border: none;
   background: black;
 }
-.main .srch svg {
-  color: white;
+.main .srch svg, .chat-content .srch svg {
+  color: #ffffff;
+  margin-bottom: 1px;
+}
+.main .avatar, .chat-content .avatar {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+}
+.main .avatar:not(:first-child), .chat-content .avatar:not(:first-child) {
+  margin-left: -60px;
+  -webkit-mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #ffffff 100%);
+  mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #ffffff 100%);
+}
+.main .avatar img, .chat-content .avatar img {
+  width: 100%;
+  display: block;
 }
 
 .regular {
@@ -11216,35 +11231,104 @@ textarea.form-control-lg {
   font-size: 25px;
 }
 
-.main {
-  background: black;
-  padding: 0;
+.chat-content p {
+  color: red;
   width: 100%;
+  text-align: right;
+  border-bottom: 1px solid red;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  padding-right: 20px;
 }
-.main .chat-content {
-  width: 25%;
-  height: 100vh;
+.chat-content p span {
   background: black;
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 0 10px;
 }
-.main .chat-box {
-  width: 75%;
-  background: #2c2b2b;
+
+.main {
+  overflow-y: scroll;
 }
 .main form {
   display: block;
+  margin: 25px 10px 0 10px;
 }
 .main .form-group {
   justify-self: center;
   align-self: center;
-  border: 1px solid white;
-  width: 20%;
-  padding: 0px 0px;
+  border: 1px solid #ffffff;
+  width: 271px;
 }
 .main .form-control {
-  background-color: #464343;
-  width: 318px;
-  height: 40px;
+  color: #ffffff;
+  background-color: #2b2929;
+  width: 268px;
+  height: 35px;
   border: none;
+}
+.main .list-group-item[aria-expanded=true] {
+  background-color: #2b2929 !important;
+  border-color: #ffffff;
+}
+.main .icon-container {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.main .icon-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.main .icon-container .status-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  border: 2px solid #ffffff;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.chat-content {
+  flex: 3;
+  background-color: black;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.chat-content .chat-messages {
+  display: flex;
+  flex-direction: column;
+  max-height: 800px;
+}
+.chat-content .chat-message-left,
+.chat-content .chat-message-right {
+  display: flex;
+  flex-shrink: 0;
+}
+.chat-content .chat-message-left {
+  margin-right: auto;
+}
+.chat-content .chat-message-right {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+.chat-content .input-group {
+  width: 100%;
+}
+.chat-content .input-group .form-control {
+  color: #ffffff;
+  background-color: #2b2929;
+  border: none;
+}
+.chat-content .input-group .btn svg {
+  color: #ffffff;
+}
+
+html, body {
+  height: 100%;
 }
 
 /*# sourceMappingURL=chat.css.map */

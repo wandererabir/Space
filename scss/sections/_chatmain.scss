@@ -1,36 +1,97 @@
+@use '../custom' as *;
 .main{
-    background: rgb(0, 0, 0);
-    padding: 0;
-    width: 100%;
-
-
-    .chat-content{
-        width: 25%;
-        height:100vh;
-        background: rgb(0, 0, 0);
-    }
-    .chat-box{
-        width: 75%;
-        background: rgb(44, 43, 43);
-    }
-
+    overflow-y: scroll;
     form{
         display: block;
+        margin: 25px 10px 0 10px;
       }
       
       .form-group{
         justify-self: center;
         align-self: center;
-        border: 1px solid rgb(255, 255, 255);
-        width: 20%;
-        padding: 0px 0px;
+        border: 1px solid $primary;
+        width: 271px;
       }
       
       .form-control{
-        background-color: rgb(70, 67, 67);
-        width: 318px;
-        height: 40px;
+        color:$primary;
+        background-color: $footer;
+        width: 268px;
+        height: 35px;
         border : none;
       }
+      .list-group-item[aria-expanded="true"]{
+        background-color: $footer !important;
+        border-color: $primary;
+      }
+      .icon-container {
+        width: 50px;
+        height: 50px;
+        position: relative;
+      
+      
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+      
+      .status-circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: grey;
+        border: 2px solid $primary;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+      }}
+
+
       
 }
+ .chat-content{
+  flex: 3; 
+  background-color: black; 
+  max-height: 100%;
+   overflow-y: auto;
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0
+}
+
+.chat-message-left {
+    margin-right: auto
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto
+}
+ .input-group{
+   width: 100%;
+
+   .form-control{
+    color:$primary;
+    background-color: $footer;
+    border : none;
+   }
+
+  .btn{
+    
+    svg{
+    color: $primary;
+    }
+  }
+ }
+}
+
+
+ 
