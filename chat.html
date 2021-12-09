@@ -113,33 +113,39 @@
 
       </div>
 
-      <div class="col chat-content flex-2 container-fluid">
+      <div class="col chat-content flex-2 container-fluid" id="chat-box">
 					<div class="py-2 px-4 border-bottom d-none d-lg-block">
 						<div class="d-flex align-items-center">
 							<div class="position-relative">
 								<img src="images/lock.jpg" class="rounded-circle mr-1 " alt="Sharon Lessman" width="40" height="40">
 							</div>
+
 							<div class="flex-grow-1 pl-3 text-white">
 								<strong>new-user-signup</strong>
 							</div>
+
 							<div>
 								<button class="btn btn-lg mr-1 px-3 main-second-btn">Close Channel</button>
-								<!--<button class="btn btn-sm mr-1 px-3 d-none d-md-inline-block" >
-                  <div class="avatars">
-                    <span class="avatar">
-                          <img  src="https://picsum.photos/70">
+								<button class="btn btn-lg mr-1 px-3" >
+                  <div class="members">
+                    <span class="member">
+                          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" width="40" height="40"/>
                       </span>
-                    <span class="avatar">
-                          <img src="https://picsum.photos/80">
+                    <span class="member">
+                          <img src="https://images.unsplash.com/photo-1485290334039-a3c69043e517?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" width="40" height="40"/>
                       </span>
-                    <span class="avatar">
-                          <img src="https://picsum.photos/90">
+                    <span class="member">
+                          <img src="https://images.unsplash.com/photo-1534119768988-c496213eff76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" width="40" height="40"/>
                       </span>
-                    <span class="avatar">
-                         <img src="https://picsum.photos/100">
+                    <span class="member">
+                          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" width="40" height="40"/>
                       </span>
+                    <span class="member">
+                          <img src="https://images.unsplash.com/photo-1584999734482-0361aecad844?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80" width="40" height="40""/>
+                      </span>
+                    <!-- Variable amount more avatars -->
                   </div>
-                </button>-->
+                </button>
 								<button class="btn btn-lg px-3"><svg style="color:white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                   <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                 </svg></button>
@@ -148,11 +154,13 @@
                   <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                 </svg></button>
 							</div>
+
 						</div>
 					</div>
 
 					<div class="position-relative">
 						<div class="chat-messages p-4">
+              <p class="chat-timing mb-5"><span class="text-white">Today</span></p>
 
 							<div class="chat-message-right pb-4">
 								<div>
@@ -230,7 +238,7 @@
 								</div>
 							</div>
 
-              <p><span>new messages</span></p>
+              <p class="new-message"><span>new messages</span></p>
 
               <div class="chat-message-left pb-4">
 								<div>
@@ -264,7 +272,7 @@
           </div>
           </div>
 
-    </div>
+     </div>
       <script src="index.js"></script>
       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

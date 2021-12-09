@@ -11151,20 +11151,20 @@ textarea.form-control-lg {
   color: #ffffff;
   margin-bottom: 1px;
 }
-.main .avatar, .chat-content .avatar {
-  display: inline-block;
+.main .member img, .chat-content .member img {
   border-radius: 50%;
-  overflow: hidden;
-  width: 100px;
+  position: relative;
+  left: -5px;
+  margin-left: -30px;
+  z-index: 1;
 }
-.main .avatar:not(:first-child), .chat-content .avatar:not(:first-child) {
-  margin-left: -60px;
-  -webkit-mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #ffffff 100%);
-  mask: radial-gradient(circle 55px at 5px 50%, transparent 99%, #ffffff 100%);
-}
-.main .avatar img, .chat-content .avatar img {
-  width: 100%;
-  display: block;
+.main .members, .chat-content .members {
+  direction: rtl;
+  /* This is to get the stack with left on top */
+  text-align: left;
+  /* Now need to explitly align left */
+  padding-left: 25px;
+  /* Same value as the negative margin */
 }
 
 .regular {
@@ -11232,6 +11232,16 @@ textarea.form-control-lg {
   font-size: 25px;
 }
 
+.chat-content .chat-timing {
+  text-align: center;
+  border-bottom: 1px solid #2b2929;
+}
+.chat-content .chat-timing span {
+  background: #383838;
+  border-radius: 5px;
+  border: 1px solid #2b2929;
+  padding: 0 10px;
+}
 .chat-content p {
   color: red;
   width: 100%;
